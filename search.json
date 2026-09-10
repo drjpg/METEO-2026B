@@ -1,0 +1,488 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Meteorología y Climatología",
+    "section": "",
+    "text": "Horario\nMiércoles: 12 a 15 horas\nJueves: 10 a 12 horas\nUbicación\nEdificio H\nProfesor\nJulio Pastor Guzman\n\n\n\n\n\n\n\nEsta asignatura\n\n\n\nEsta asignatura aporta al perfil del egresado los conocimientos y herramientas que le permitan el análisis de los diferentes factores que influyen en el clima y el tiempo atmosférico para su predicción, prevención, difusión y realización de actividades turísticas al aire libre. Asimismo, permite reconocer y valorar la riqueza ecológica de la región para la prestación de servicios turísticos de naturaleza sustentables de forma segura, garantizando siempre la integridad del turista.\n\n\n\n¡Bienvenidos!\n\nAprenderás los principios de la meteorología y su correlación directa con el turismo para determinar la viabilidad de actividades en el espacio geográfico. Explorarás desde los elementos básicos como radiación, temperatura y presión, hasta fenómenos complejos como el impacto de huracanes y la clasificación climática de Köppen aplicada a destinos turísticos.\nEn esta página encontrarás el temario, diapositivas, trabajos y evaluaciones del curso enfocados en la seguridad y la gestión del riesgo atmosférico en expediciones de aventura.\n\n\n\nCompetencia a desarrollar\nAl final de esta asignatura, el o la estudiante será capaz de:\n\nAplicar los conocimientos de la meteorología, sus elementos y la climatología para garantizar la seguridad del turista, analizando las condiciones del tiempo y los riesgos atmosféricos para la toma de decisiones estratégicas en la realización de actividades al aire libre y de aventura.\n\n\n\nPre-requisitos\n\nManejo con propiedad de información geográfica.\nAplicación de métodos de representación cartográfica.\nCapacidad para la investigación documental y el análisis de datos provenientes de diversas fuentes para la solución de problemas.\n\n\n\nTemas\nLa asignatura se encuentra dividida en cuantro grandes temas:  \n\n\n\n\n\nUnidad\nDescripción\n\n\n\n\n1\nIntroducción a la Meteorología\n\n\n2\nFenómenos atmosféricos de riesgos para las actividades turísticas\n\n\n3\nCirculación general de los vientos atmosféricos\n\n\n4\nClimatología"
+  },
+  {
+    "objectID": "part_2_eda.html",
+    "href": "part_2_eda.html",
+    "title": "Part I",
+    "section": "",
+    "text": "Page with R code\n\n\n\nThis page contains an example template for a lab session, where R code and results are displayed here.\nYou can find more information on how to include code in Quarto website here.\nYou can experiment with code-fold and code-tools in the yaml header above to change how the code cells look like.",
+    "crumbs": [
+      "Home",
+      "Part I"
+    ]
+  },
+  {
+    "objectID": "part_2_eda.html#a-cancer-modeling-example",
+    "href": "part_2_eda.html#a-cancer-modeling-example",
+    "title": "Part I",
+    "section": "A Cancer Modeling Example",
+    "text": "A Cancer Modeling Example\nExercise on analysis of miRNA, mRNA and protein data from the paper Aure et al, Integrated analysis reveals microRNA networks coordinately expressed with key proteins in breast cancer, Genome Medicine, 2015.\nPlease run the code provided to replicate some of the analyses. Make sure you can explain what all the analysis steps do and that you understand all the results.\nIn addition, there are some extra tasks (Task 1), where no R code is provided. Please do these tasks when you have time available at the end of the lab.\n\nLoad the data\nRead the data, and convert to matrix format.\n\nmrna &lt;- read.table(\"data/data_example.txt\", header=T, sep=\"\\t\", dec=\".\")\n\n# Convert to matrix format\n\nmrna &lt;- as.matrix(mrna)\n\nPrint the data\n\nmrna[1:4, 1:4]\n\n      OSL2R.3002T4 OSL2R.3005T1 OSL2R.3013T1 OSL2R.3030T2\nACACA      1.60034     -0.49087     -0.26553     -0.27857\nANXA1     -2.42501     -0.05416     -0.46478     -2.18393\nAR         0.39615     -0.43348     -0.10232      0.58299\nBAK1       0.78627      0.39897      0.22598     -1.31202\n\n\nVisualise the overall distribution of expression levels by histogram\n\nhist(mrna, nclass=40, xlim=c(-5,5), col=\"lightblue\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTask 1\n\n\n\nThis is a callout-note, and it can be quite useful for exercises. You can find more about callout here.\nExample: Extend the above analysis to cover all genes.",
+    "crumbs": [
+      "Home",
+      "Part I"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About page\n\n\n\nThis page contains some elaborated background information about your workshop, or the instructors.\n\n\nFor example: A central problem in machine learning is how to make an algorithm perform well not just on the training data, but also on new inputs. Many strategies in machine learning are explicitly designed to reduce this test error, possibly at the expense of increased training error. These strategies are collectively known as regularisation and they are instrumental for good performance of any kind of prediction or classification model, especially in the context of small data (many features, few samples).\nIn the hands-on tutorial we will use R to perform an integrated analysis of multi-omics data with penalised regression.\n\nContact\nInstructor A: contact\nInstructor B: contact\nInstructor C: contact"
+  },
+  {
+    "objectID": "part_1_prep.html",
+    "href": "part_1_prep.html",
+    "title": "Preparation",
+    "section": "",
+    "text": "Page without code\n\n\n\nThis page contains an example for some structured preparation information for a workshop. No code is executed here.\nHere are some preparation information for the participants.",
+    "crumbs": [
+      "Home",
+      "Preparation"
+    ]
+  },
+  {
+    "objectID": "part_1_prep.html#software",
+    "href": "part_1_prep.html#software",
+    "title": "Preparation",
+    "section": "Software",
+    "text": "Software\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Preparation"
+    ]
+  },
+  {
+    "objectID": "part_1_prep.html#data",
+    "href": "part_1_prep.html#data",
+    "title": "Preparation",
+    "section": "Data",
+    "text": "Data\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Preparation"
+    ]
+  },
+  {
+    "objectID": "part_1_prep.html#code",
+    "href": "part_1_prep.html#code",
+    "title": "Preparation",
+    "section": "Code",
+    "text": "Code\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Preparation"
+    ]
+  },
+  {
+    "objectID": "part_1_prep.html#resources",
+    "href": "part_1_prep.html#resources",
+    "title": "Preparation",
+    "section": "Resources",
+    "text": "Resources\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Preparation"
+    ]
+  },
+  {
+    "objectID": "U1.html",
+    "href": "U1.html",
+    "title": "Unidad 1: Introducción a la Meteorología",
+    "section": "",
+    "text": "Note\n\n\n\n\nDefine la importancia de la meteorología y sus elementos para garantizar la seguridad del turista.\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n\n\nEvaluación\n\n\n\n\n\nTrabajos",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1: Introducción a la Meteorología"
+    ]
+  },
+  {
+    "objectID": "U1.html#software",
+    "href": "U1.html#software",
+    "title": "Unidad 1",
+    "section": "Software",
+    "text": "Software\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Unidad 1"
+    ]
+  },
+  {
+    "objectID": "U1.html#data",
+    "href": "U1.html#data",
+    "title": "Unidad 1",
+    "section": "Data",
+    "text": "Data\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 1"
+    ]
+  },
+  {
+    "objectID": "U1.html#code",
+    "href": "U1.html#code",
+    "title": "Unidad 1",
+    "section": "Code",
+    "text": "Code\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 1"
+    ]
+  },
+  {
+    "objectID": "U1.html#resources",
+    "href": "U1.html#resources",
+    "title": "Unidad 1",
+    "section": "Resources",
+    "text": "Resources\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Unidad 1"
+    ]
+  },
+  {
+    "objectID": "U2.html",
+    "href": "U2.html",
+    "title": "Unidad 2: Fenómenos atmosféricos",
+    "section": "",
+    "text": "Note\n\n\n\nIdentifica los fenómenos meteorológicos que afectan al turismo.\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n\n\nEvaluación\n\n\n\n\n\nTrabajos",
+    "crumbs": [
+      "Inicio",
+      "Unidad 2: Fenómenos atmosféricos"
+    ]
+  },
+  {
+    "objectID": "U2.html#a-cancer-modeling-example",
+    "href": "U2.html#a-cancer-modeling-example",
+    "title": "Unidad 2",
+    "section": "A Cancer Modeling Example",
+    "text": "A Cancer Modeling Example\nExercise on analysis of miRNA, mRNA and protein data from the paper Aure et al, Integrated analysis reveals microRNA networks coordinately expressed with key proteins in breast cancer, Genome Medicine, 2015.\nPlease run the code provided to replicate some of the analyses. Make sure you can explain what all the analysis steps do and that you understand all the results.\nIn addition, there are some extra tasks (Task 1), where no R code is provided. Please do these tasks when you have time available at the end of the lab.\n\nLoad the data\nRead the data, and convert to matrix format.\n\nmrna &lt;- read.table(\"data/data_example.txt\", header=T, sep=\"\\t\", dec=\".\")\n\n# Convert to matrix format\n\nmrna &lt;- as.matrix(mrna)\n\nPrint the data\n\nmrna[1:4, 1:4]\n\n      OSL2R.3002T4 OSL2R.3005T1 OSL2R.3013T1 OSL2R.3030T2\nACACA      1.60034     -0.49087     -0.26553     -0.27857\nANXA1     -2.42501     -0.05416     -0.46478     -2.18393\nAR         0.39615     -0.43348     -0.10232      0.58299\nBAK1       0.78627      0.39897      0.22598     -1.31202\n\n\nVisualise the overall distribution of expression levels by histogram\n\nhist(mrna, nclass=40, xlim=c(-5,5), col=\"lightblue\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTask 1\n\n\n\nThis is a callout-note, and it can be quite useful for exercises. You can find more about callout here.\nExample: Extend the above analysis to cover all genes.",
+    "crumbs": [
+      "Home",
+      "Unidad 2"
+    ]
+  },
+  {
+    "objectID": "U3.html",
+    "href": "U3.html",
+    "title": "Unidad 3: Circulación general de los vientos",
+    "section": "",
+    "text": "Note\n\n\n\n\nEvalúa las condiciones del viento con el fin de tomar decisiones estratégicas para la actividad turística.\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n\n\nEvaluación\n\n\n\n\n\nTrabajos",
+    "crumbs": [
+      "Inicio",
+      "Unidad 3: Circulación general de los vientos"
+    ]
+  },
+  {
+    "objectID": "U3.html#software",
+    "href": "U3.html#software",
+    "title": "Unidad 3",
+    "section": "Software",
+    "text": "Software\n\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#data",
+    "href": "U3.html#data",
+    "title": "Unidad 3",
+    "section": "Data",
+    "text": "Data\n\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#code",
+    "href": "U3.html#code",
+    "title": "Unidad 3",
+    "section": "Code",
+    "text": "Code\n\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#resources",
+    "href": "U3.html#resources",
+    "title": "Unidad 3",
+    "section": "Resources",
+    "text": "Resources\n\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#title-unidad-1",
+    "href": "U3.html#title-unidad-1",
+    "title": "Unidad 1",
+    "section": "title: “Unidad 1”\\",
+    "text": "title: “Unidad 1”\\\nformat:\nhtml:\ncode-fold: false\ncode-tools: false\neditor: visual\n\n\n\n\n\n\nPage without code\n\n\n\nThis page contains an example for some structured preparation information for a workshop. No code is executed here.\n\n\n\nHere are some preparation information for the participants.",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#software-1",
+    "href": "U3.html#software-1",
+    "title": "Unidad 1",
+    "section": "Software",
+    "text": "Software\n\n{fig-alt=“Software icon” width=“80px”}\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#data-1",
+    "href": "U3.html#data-1",
+    "title": "Unidad 1",
+    "section": "Data",
+    "text": "Data\n\n{fig-alt=“Data icon” width=“80px”}\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#code-1",
+    "href": "U3.html#code-1",
+    "title": "Unidad 1",
+    "section": "Code",
+    "text": "Code\n\n{fig-alt=“Code icon” width=“80px”}\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#resources-1",
+    "href": "U3.html#resources-1",
+    "title": "Unidad 1",
+    "section": "Resources",
+    "text": "Resources\n\n{fig-alt=“Resources icon” width=“80px”}\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U4.html",
+    "href": "U4.html",
+    "title": "Unidad 4: Climatología",
+    "section": "",
+    "text": "Note\n\n\n\n\nAnaliza las condiciones climatológicas para la práctica de actividades al aire libre.\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n\n\nEvaluación\n\n\n\n\n\nTrabajos",
+    "crumbs": [
+      "Inicio",
+      "Unidad 4: Climatología"
+    ]
+  },
+  {
+    "objectID": "U4.html#software",
+    "href": "U4.html#software",
+    "title": "Unidad 4",
+    "section": "Software",
+    "text": "Software\n\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#data",
+    "href": "U4.html#data",
+    "title": "Unidad 4",
+    "section": "Data",
+    "text": "Data\n\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#code",
+    "href": "U4.html#code",
+    "title": "Unidad 4",
+    "section": "Code",
+    "text": "Code\n\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#resources",
+    "href": "U4.html#resources",
+    "title": "Unidad 4",
+    "section": "Resources",
+    "text": "Resources\n\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#software-1",
+    "href": "U4.html#software-1",
+    "title": "Unidad 4",
+    "section": "Software",
+    "text": "Software\n\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#data-1",
+    "href": "U4.html#data-1",
+    "title": "Unidad 4",
+    "section": "Data",
+    "text": "Data\n\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#code-1",
+    "href": "U4.html#code-1",
+    "title": "Unidad 4",
+    "section": "Code",
+    "text": "Code\n\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#resources-1",
+    "href": "U4.html#resources-1",
+    "title": "Unidad 4",
+    "section": "Resources",
+    "text": "Resources\n\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "index.html#bienvenidos",
+    "href": "index.html#bienvenidos",
+    "title": "Meteorología y Climatología",
+    "section": "Bienvenidos!",
+    "text": "Bienvenidos!\n\nThe goal of the workshop is to … (insert your message)\nFor example, introduce kep concepts in machine learning, such as regularisation.\nWorkshop material can be found in the workshop github repository."
+  },
+  {
+    "objectID": "index.html#competencia-a-desarrollar",
+    "href": "index.html#competencia-a-desarrollar",
+    "title": "Meteorología y Climatología",
+    "section": "Competencia a desarrollar",
+    "text": "Competencia a desarrollar\nAl final de esta asignatura, el o la estudiante será capaz de:\n\nAplicar los conocimientos de la Meteorología y sus elementos para garantizar la seguridad propia y del turista."
+  },
+  {
+    "objectID": "index.html#pre-requisitos",
+    "href": "index.html#pre-requisitos",
+    "title": "Meteorología y Climatología",
+    "section": "Pre-requisitos",
+    "text": "Pre-requisitos\n\nManejo con propiedad Información geográfica.\nAplica métodos de representación cartográfica."
+  },
+  {
+    "objectID": "index.html#temas",
+    "href": "index.html#temas",
+    "title": "Meteorología y Climatología",
+    "section": "Temas",
+    "text": "Temas\nLa asignatura se encuentra dividida en cuatro temas. Los tres primeros enfocados a meteorología y el cuarto a la climatología.  \n\n\n\n\n\nUnidad\nDescripción\n\n\n\n\n1\nIntroducción a la Meteorología\n\n\n2\nFenómenos atmosféricos de riesgos para las actividades turísticas\n\n\n2\nCirculación general de los vientos atmosféricos\n\n\n2\nClimatología"
+  },
+  {
+    "objectID": "U1-tem.html",
+    "href": "U1-tem.html",
+    "title": "Unidad 1: Introducción a la Biogeografía",
+    "section": "",
+    "text": "Esta asignatura\n\n\n\nDefine la importancia de la meteorología y sus elementos para garantizar la seguridad del turista.\n\n\nUnidad 1: Introducción a la Meteorología:\n\n1.1. Conceptos generales.\n\n1.1.1. Objetivo e importancia de la Meteorología y su aplicación en las actividades del turismo.\n1.1.2. Importancia de la atmósfera y capas que la componen.\n\n1.2. Principales Elementos meteorológicos.\n\n1.2.1. Radiación solar.\n1.2.2. Temperatura (incluye inversión térmica y efecto invernadero).\n1.2.3. Presión Atmosférica.\n1.2.4. Humedad (relativa y absoluta).\n1.2.5. Nubosidad.\n1.2.6. Precipitación.\n1.2.7. Interacción Océano-Atmósfera.\n1.2.8. Corrientes marinas.\n\n1.3. Meteorología cuantitativa.\n\n1.3.1. Escalas para la medición de la temperatura (Celsius, Fahrenheit y Kelvin).\n\n1.4. Medición de la temperatura máxima y mínima.\n1.5. Efecto invernadero y gases que lo producen.\n1.6. Impacto del efecto invernadero en las actividades del turismo.\n1.7. Barómetro.\n\n1.7.1. Presión atmosférica y tipos de presión atmosférica.\n\n1.8. Impacto de la Presión atmosférica en las actividades del turismo de aventura.\n1.9. Medición de la presión atmosférica."
+  },
+  {
+    "objectID": "U1-tra.html",
+    "href": "U1-tra.html",
+    "title": "Unidad 1: Introducción a la Biogeografía",
+    "section": "",
+    "text": "Actividades de la unidad 1\n\n\n\n\n\nActividad\n\n\nDescripción\n\n\nEntrega\n\n\nCargue aquí\n\n\n\n\nTabla comparativa\n\n\nContrastar la Meteorología y la Climatología en función de su campo de estudio, métodos de estudio y qué aporta cada una a la planificación del turismo.\n\n\n04-sep-2026\n\n\n Subir \n\n\n\n\nEfecto invernadero\n\n\nInvestigar en fuentes confiables y explicar qué es el efecto invernadero, qué gases intervienen y cuándo se vuelve un problema.\n\n\n04-sep-2026\n\n\n Subir \n\n\n\n\nHumedad\n\n\nHacer una investigación documental en fuentes confiables y explicar qué es la humedad absoluta, relativa, cómo se mide y qué impactos tiene en las actividades al aire libre.\n\n\n04-sep-2026\n\n\n Subir \n\n\n\n\nNubosidad\n\n\nSalir al exterior y observar las nubes. Determinar tipo de nube, altura, nubosidad de acuerdo con una app, nubosidad en escala de la octa y nubosidad en porcentaje. Incluir fotos en su escrito. Responder qué implicaciones tiene esa nubosidad para las actividades al aire libre.\n\n\n04-sep-2026\n\n\n Subir"
+  },
+  {
+    "objectID": "U1-eva.html",
+    "href": "U1-eva.html",
+    "title": "Unidad 1: Tipos de investigación",
+    "section": "",
+    "text": "Note\n\n\n\n\nDistingue los tipos de investigación, así como los métodos y técnicas de cada uno de ellos.\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n\n\nEvaluación\n\n\n\n\n\nTrabajos"
+  },
+  {
+    "objectID": "U5.html",
+    "href": "U5.html",
+    "title": "Unidad 5: Escuelas biogeográficas y métodos de estudio",
+    "section": "",
+    "text": "Note\n\n\n\n\n\n\n\n\nContrasta los paradigmas de las escuelas de pensamiento y sus métodos de estudio, para seleccionar los elementos que faciliten los procesos de toma de decisiones respecto a las áreas\ncríticas para la conservación. \n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n\n\nEvaluación\n\n\n\n\n\nTrabajos",
+    "crumbs": [
+      "Inicio",
+      "Unidad 5: Escuelas biogeográficas y métodos de estudio"
+    ]
+  },
+  {
+    "objectID": "U2-tem.html",
+    "href": "U2-tem.html",
+    "title": "Unidad 2: Fenómenos atmosféricos",
+    "section": "",
+    "text": "Esta unidad\n\n\n\nIdentifica los fenómenos meteorológicos que afectan al turismo.\n\n\nUnidad 2: Fenómenos atmosféricos de riesgos para las actividades turísticas\n\n2.1. Tornados, trombas, granizadas, nevadas, tormentas eléctricas, lluvias, neblinas, ventiscas, tolvaneras, etc.\n2.2. Heladas.\n\n2.2.1. Blanca.\n2.2.2. Negra.\n\n2.3. Métodos y medidas de prevención y protección ante riesgos atmosféricos, para la realización de actividades turísticas."
+  },
+  {
+    "objectID": "lit.html",
+    "href": "lit.html",
+    "title": "Lecturas recomendadas",
+    "section": "",
+    "text": "Note\n\n\n\n\nEn esta página encontrarás una lista de lecturas recomendadas para la asignatura de Biogeografía. Los documentos han sido cuidadosamente seleccionados para proporcionar una comprensión amplia y detallada de los diversos aspectos de esta disciplina. Los textos incluyen desde enfoques comparativos hasta aproximaciones ecológicas y evolutivas:\n\n\n\nLecturas\n\nBiogeographical regionalisation of the Neotropical region  [link] \nNature’s Biodiversity The Search, for Beginnings and for Order  [link] \nIsland biogeography of native and alien plant species: Contrasting drivers of diversity across the Lesser Antilles  [link] \nThe map of Biodiversity From Local to Global Scales  [link] \nGlobal Centers of Vascular Plant Diversity  [link] \nComparative Biogeography  [link] \nBiogeography - Second Edition  [link] \nBiogeography - Space, Time and Life  [link] \nFundamentals of Biogeography - Second Edition  [link] \nBiogeography - An Ecologica and Evolutionary Approach  [link] \nBiogeography - A Brief Introduction  [link] \nBiogeography - Berkshire  [link] \nBiogeografía - La Dimensión Espacial de la Evolución  [link] \nIntroducción a la Biogeografía en Latinoamérica: Teorías, Conceptos, Métodos y Aplicaciones  [link] \nSistemática, Biogeografía y Evolución - Los Patrones de la Biodiversidad en Tiempo-Espacio  [link] \nHistorical Biogeography: A Review of its Basic Concepts and Critical Issues  [link] \nBiogeography in the Early Twenty-First Century: A Science with Increasing Significance for Earth´s Changes and Challenges  [link]"
+  },
+  {
+    "objectID": "U4-tra.html",
+    "href": "U4-tra.html",
+    "title": "Unidad 4: Climatología",
+    "section": "",
+    "text": "Actividades de la unidad 4\n\n\n\n\n\nActividad\n\n\nDescripción\n\n\nEntrega\n\n\nCargue aquí\n\n\n\n\nImportancia climatología\n\n\nElabora un reporte de lectura en el que analices la importancia y los objetivos de la climatología, destacando cómo el estudio del clima influye en la toma de decisiones para el sector turismo.\n\n\n08-dic-2026\n\n\n Subir \n\n\n\n\nEsquema sistemas climáticos\n\n\nDesarrolla un esquema detallado sobre los sistemas naturales climáticos, identificando sus componentes principales y la relación entre ellos.\n\n\n08-dic-2026\n\n\n Subir \n\n\n\n\nDibujo Niño Niña\n\n\nInvestiga, dibuja y explica qué son los fenémenos de El Niño y La Niña y sus consecuencias en el turismo.\n\n\n08-dic-2026\n\n\n Subir \n\n\n\n\nExposición climas del mundo\n\n\nPrepara una exposición donde interpretes los diversos climas del mundo y su relación en la actividad turística.\n\n\n08-dic-2026\n\n\n Subir"
+  },
+  {
+    "objectID": "U3-tem.html",
+    "href": "U3-tem.html",
+    "title": "Unidad 3: Circulación general de los vientos",
+    "section": "",
+    "text": "Esta unidad\n\n\n\nEvalúa las condiciones del viento con el fin de tomar decisiones estratégicas para la actividad turística.\n\n\nUnidad 3: Circulación general de los vientos atmosféricos\n\n3.1. Masas de aire.\n3.2. Vientos.\n\n3.2.1. Escala de Beaufort.\n3.2.2. Circulación de los vientos.\n\n3.3. Huracanes y sus efectos.\n\n3.3.1. Escala Saffir-Simpson.\n3.3.2. Denominación de los huracanes en diferentes países.\n3.3.3. Condiciones que originan la formación de huracanes.\n3.3.4. Etapas de formación de un huracán.\n3.3.5. Zonas geográficas generadoras de huracanes."
+  },
+  {
+    "objectID": "U2-tra.html",
+    "href": "U2-tra.html",
+    "title": "Unidad 2: Fenómenos atmosféricos",
+    "section": "",
+    "text": "Actividades de la unidad 2\n\n\n\n\n\nActividad\n\n\nDescripción\n\n\nEntrega\n\n\nCargue aquí\n\n\n\n\nIdentificar heladas\n\n\nLleva a cabo una búsqueda en internet sobre noticias que reporten heladas blancas y negras. Identifica en qué parte de México ocurren y qué actividades turísticas se realizan en esa región.\n\n\n06-oct-2026\n\n\n Subir \n\n\n\n\nEsquema variables\n\n\nRealiza un esquema detallado donde describas las principales variables meteorológicas que deben considerarse antes y durante la ejecución de actividades de turismo al aire libre para garantizar el éxito de la operación.\n\n\n06-oct-2026\n\n\n Subir \n\n\n\n\nFenómenos meteorológicos\n\n\nElabora un texto escrito basado en una investigación documental donde identifiques los fenómenos meteorológicos que más afectan al territorio nacional, describiendo sus características principales y los riesgos que implican para el sector turismo.\n\n\n06-oct-2026\n\n\n Subir \n\n\n\n\nProtocolo de seguridad\n\n\nDiseña un protocolo de actuación inmediata frente a un riesgo atmosférico específico (ej. tormenta eléctrica en montaña); describe las medidas de prevención previas y las acciones de protección que darías a tus clientes durante el evento.\n\n\n06-oct-2026\n\n\n Subir"
+  },
+  {
+    "objectID": "U3-tra.html",
+    "href": "U3-tra.html",
+    "title": "Unidad 3: Circulación general de los vientos",
+    "section": "",
+    "text": "Actividades de la unidad 3\n\n\n\n\n\nActividad\n\n\nDescripción\n\n\nEntrega\n\n\nCargue aquí\n\n\n\n\nResumen circulación vientos\n\n\nElabora un resumen individual con la información encontrada sobre la circulación de los vientos, las masas de aire y las etapas de formación de un huracán.\n\n\n10-nov-2026\n\n\n Subir \n\n\n\n\nDibujos símbolos\n\n\nDibuja los símbolos más utilizados para comunicar información meteorológica y explica el significado de cada uno.\n\n\n10-nov-2026\n\n\n Subir \n\n\n\n\nEfectos de los vientos\n\n\nRedacta un escrito sobre los efectos secundarios del viento en el turismo, considerando las diferentes intensidades y escalas de medición. Posteriormente discutirlo en clase.\n\n\n10-nov-2026\n\n\n Subir \n\n\n\n\nComparativa huracanes\n\n\nRealiza un cuadro comparativo donde identifiques las diferentes denominaciones que reciben los huracanes según la zona geográfica y el país donde se originan.\n\n\n10-nov-2026\n\n\n Subir"
+  },
+  {
+    "objectID": "U4-tem.html",
+    "href": "U4-tem.html",
+    "title": "Unidad 4: Climatología",
+    "section": "",
+    "text": "Esta unidad\n\n\n\nAnaliza las condiciones climatológicas para la práctica de actividades al aire libre.\n\n\nUnidad 4: Climatología\n\n4.1. Climatología y turismo.\n\n4.1.1. Importancia.\n4.1.2. Conceptos.\n\n4.2. El clima y los sistemas naturales.\n4.3. Impacto del clima en la realización de actividades turísticas.\n\n4.3.1. Sotavento.\n4.3.2. Solana.\n4.3.3. Umbría.\n4.3.4. Factores Antrópicos.\n4.3.5. Factores cósmicos.\n4.3.6. Actividades solares.\n\n4.3.6.1. Afelio.\n4.3.6.2. Perihelio.\n\n\n4.4. Interpretación de climas.\n\n4.4.1. Zonas climáticas en el mundo.\n4.4.2. Clasificación climática de Köppen mejorado por Enriqueta García.\n\n4.5. Pronóstico del tiempo atmosférico.\n4.6. Pronostico estadístico.\n4.7. Pronostico Sináptico."
+  }
+]
